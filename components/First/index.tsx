@@ -9,6 +9,7 @@ import {
     Typography,
     Button,
     Divider,
+    Grid,
 
 } from '@mui/material';
 import { Box } from '@mui/system';
@@ -35,10 +36,11 @@ const StyledStack = styled(Stack)(({theme}) => ({
 
 const First:NextPage = () => {
     return(
-        <>
+        
+    <Box sx={{backgroundColor:'primary.main'}}>
         <Container maxWidth='xl'>
-            <StyledStack direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'row' }} spacing={15} mt='50px'>
-                <Stack spacing={5}>
+            <StyledStack direction={{ xs: 'column', sm: 'column', md: 'column', lg: 'row' }} spacing={15}>
+                <Stack spacing={5} mt='70px'>
                     <Typography fontSize="80px" fontFamily="Bai Jamjuree" color="text.primary" >
                         <b>Banking <br/>
                         <b style={{ border: "3px solid #FF8A1F", borderRadius: "50%" }}>More</b> Smart</b>
@@ -202,12 +204,73 @@ const First:NextPage = () => {
                         </Typography>
                     </StyledStack>
                 </Stack>
-                
                 <Divider />
             </Box>
-            
         </StyledStack>
-        </>
+        
+        <StyledStack direction={{xl:'row', lg:'row', md:'column', sm:'column', xs:'column'}} spacing={10} mt='50px'>
+            <Box width='675px' height='507'>
+                <img src='card.png' />
+            </Box>
+            <Box width='450px' alignItems='center' justifyContent='center'>
+                <Stack spacing={3}>
+                    <Typography fontSize="52px" fontFamily='Bai Jamjuree' color="text.primary">
+                    <b>Handoff your work <br /> smarter now</b>
+                    </Typography>
+                    <Typography fontSize="16px" color="text.secondary" >
+                    Create documentation for the collaborators (i.e. <br /> designers or devs) directly in your design file. 
+                    </Typography>
+                </Stack>
+                <Stack mt='30px' spacing={3}>
+                    <Stack direction='row' spacing={3}>
+                        <Box width='60px' height='60px' sx={{backgroundColor: 'white', borderRadius:'50%',boxShadow: '0px 28px 60px rgba(152, 152, 152, 0.15)'}} display='flex' justifyContent='center' alignItems='center'>
+                            <img src='icon01.png' />
+                        </Box>
+                        <Stack spacing={1} >
+                            <Typography fontSize="20px" fontFamily='Bai Jamjuree' color="text.primary">
+                            <b>Strategic</b>
+                            </Typography>
+                            <Typography fontSize="15px" color="text.secondary" >
+                            Suggests that the component spacing <br /> between cards and elements.
+                            </Typography>
+                        </Stack>
+                    </Stack>
+                    <Stack direction='row' spacing={3}>
+                        <Box width='60px' height='60px' sx={{backgroundColor: 'white', borderRadius:'50%',boxShadow: '0px 28px 60px rgba(152, 152, 152, 0.15)'}} display='flex' justifyContent='center' alignItems='center'>
+                            <img src='icon02.png' />
+                        </Box>
+                        <Stack spacing={1} >
+                            <Typography fontSize="20px" fontFamily='Bai Jamjuree' color="text.primary">
+                            <b>Work  schedule</b>
+                            </Typography>
+                            <Typography fontSize="15px" color="text.secondary" >
+                            work schedule is the time an employee is <br /> expected to be on the job
+                            </Typography>
+                        </Stack>
+                    </Stack>
+                </Stack>
+            </Box>
+        </StyledStack>
+        <Stack width="100%" height='522px' sx={{backgroundColor:'#41B3F4'}} direction='row' position='relative' mt='122px'>
+            <StyledStack width='65%' direction='row' spacing={5}  pb='160px'>
+                <Typography fontSize="18px" color="#414449" position='relative'>
+                    <b>Subscribe <br/> to get updated <br/> news</b>
+                    <Box width='96px' height='96px' position='absolute' top='100px'><img src='text.png'/></Box>
+                </Typography>
+                <Box width='8px' height='133px' sx={{backgroundColor:'#718176'}}></Box>
+                <Typography fontSize="60px" color="black" fontFamily='Bai Jamjuree' position='relative'>
+                    <b>Subscribe our <br/> newsletter</b>
+                    <Box width='160px' height='58px' alignItems='center' justifyContent='center' display='flex' sx={{backgroundColor:'#E15C19'}} position='absolute'>
+                    <Typography color="white" fontSize="16px">
+                    Subscribe
+                    </Typography></Box>
+                </Typography>
+            </StyledStack>
+                <Box width='691.8px' height='734.21' sx={{transform: 'rotate(359deg)'}} position='absolute' top='-200px'  right='130px'>
+                    <img src='Group.png' />
+                </Box>
+        </Stack>
+    </Box>
     )
 }
 

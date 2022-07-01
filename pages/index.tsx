@@ -1,18 +1,20 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+// import styles from '../styles/Home.module.css'
 
 import Header from '../components/Header'
 import First from '../components/First'
+import Footer from '../components/Footer'
 
 
 const Home: NextPage = () => {
   return (
-    <div style={{backgroundColor:'primary.main'}}>
+    <div >
       <Header />
       <First />
-      <footer className={styles.footer}>
+      <Footer />
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -23,7 +25,7 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
