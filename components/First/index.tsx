@@ -167,7 +167,7 @@ const First:NextPage = () => {
             Analyze any Business or Creator account—including your competitors—to find the imagery, <br /> visuals, and captions that drive audience engagement. Get social calendars planned faster <br /> and spend less time testing content strategies.
             </Typography>
             <Box>
-                <Divider sx={{}} />
+                <Divider />
                 <Stack direction='row' spacing={10} divider={<Divider orientation="vertical" flexItem />}>
                     <StyledStack spacing={4} mt="70px" mb="70px">
                         <Typography fontSize="16px" fontFamily='Inter' color="text.secondary" align='center' sx={{letter:'40%'}}>
