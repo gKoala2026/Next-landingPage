@@ -37,10 +37,10 @@ const HideOnScroll = (props: Props) => {
   );
 }
 
-const Header:NextPage<Props> = (props) => {
+const Header:NextPage = () => {
   return (
     <React.Fragment>
-      <HideOnScroll {...props}>
+      <HideOnScroll>
         <AppBar>
           <Toolbar>
             <Grid>

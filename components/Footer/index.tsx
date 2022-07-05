@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 
-import * as React from 'react'
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Slide from '@mui/material/Slide';
-import { Divider, Grid, Stack } from '@mui/material';
+import * as React from 'react';
+import { 
+    Stack, 
+    Typography,
+    Box,
+} from '@mui/material';
 
-import Besnik from '../../public/Besnik.png'
 import styled from '@emotion/styled';
 
 const StyledStack = styled(Stack)(({theme}) => ({

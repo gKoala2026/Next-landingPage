@@ -1,15 +1,11 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 
 import * as React from 'react'
 import {
-    Toolbar,
     Container,
     Stack,
     Typography,
-    Button,
     Divider,
-    Grid,
 
 } from '@mui/material';
 import { Box } from '@mui/system';
